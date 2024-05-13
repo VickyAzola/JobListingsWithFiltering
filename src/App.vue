@@ -61,7 +61,7 @@ const filterStyle = 'bg-cyan-400/10 px-3 py-1 rounded hover:bg-DesaturatedDarkCy
     <header class="bg_header"></header>
 
 <!-- filterBox -->
-    <div v-show="filterBox == true" class="mt-[-2rem] mx-6 lg:mx-32">
+    <div v-show="filterBox == true" class="mt-[-2rem] mx-6 lg:mx-40">
       <section class="bg-white py-5 pl-5 lg:pl-8 lg:pr-2 shadow-xl shadow-DesaturatedDarkCyan/10 rounded flex justify-between pr-4 lg:grid lg:grid-cols-12">
         <div class="flex flex-row gap-y-2 gap-x-4 flex-wrap col-span-11">
           <div v-for="(filter, index) in filtersArr" class="flex items-center">
@@ -88,7 +88,7 @@ const filterStyle = 'bg-cyan-400/10 px-3 py-1 rounded hover:bg-DesaturatedDarkCy
 <!-- End filterBox -->
 
 <!-- Job listing -->
-    <section class="mx-6 lg:mx-32 mt-14">
+    <section class="mx-6 lg:mx-40 mt-14">
       <div v-for="jobData in Data" class="mb-12 lg:mb-6">
         <div 
           v-if="passFilter(jobData)"
