@@ -97,7 +97,7 @@ const filterStyle = 'bg-cyan-400/10 px-3 py-1 rounded hover:bg-DesaturatedDarkCy
           :class="[jobData.featured == true ? 'border-l-4 border-DesaturatedDarkCyan' : 'border-l-4 border-white']"
         >
           <div class="lg:flex lg:items-center lg:gap-x-6">
-          <img :src=jobData.logo class="w-14 lg:w-[5.5rem] absolute lg:static top-[-1.7rem] left-5" alt="logo" />
+          <img :src=jobData.logo class="w-14 lg:w-[6rem] absolute lg:static top-[-1.7rem] left-5" alt="logo" />
           <div class="min-w-max">
             <div class="flex items-center">
               <p class="text-DesaturatedDarkCyan font-bold mr-4">{{ jobData.company }}</p>
