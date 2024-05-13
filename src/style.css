@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'League Spartan Variable', sans-serif;
+}
+
+.bg_header {
+  height: 9.6rem;
+  width: 100%;
+  background-image: url('/images/bg-header-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(180, 29%, 50%);
+}
+
+@media screen and (min-width:768px) {
+  .bg_header {
+    background-image: url('/images/bg-header-desktop.svg');
+  }
+}
