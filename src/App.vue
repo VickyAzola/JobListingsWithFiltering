@@ -61,7 +61,7 @@ const filterStyle = 'bg-cyan-400/10 px-3 py-1 rounded hover:bg-DesaturatedDarkCy
     <header class="bg_header"></header>
 
 <!-- filterBox -->
-    <div v-show="filterBox == true" class="mt-[-2rem] mx-6 lg:mx-40">
+    <div v-show="filterBox == true" class="mt-[-2rem] px-6 md:px-16 lg:px-24 max-w-[80rem] lg:mx-auto">
       <section class="bg-white py-5 pl-5 lg:pl-8 lg:pr-2 shadow-xl shadow-DesaturatedDarkCyan/10 rounded flex justify-between pr-4 lg:grid lg:grid-cols-12">
         <div class="flex flex-row gap-y-2 gap-x-4 flex-wrap col-span-11">
           <div v-for="(filter, index) in filtersArr" class="flex items-center">
@@ -88,7 +88,7 @@ const filterStyle = 'bg-cyan-400/10 px-3 py-1 rounded hover:bg-DesaturatedDarkCy
 <!-- End filterBox -->
 
 <!-- Job listing -->
-    <section class="mx-6 lg:mx-40 mt-14">
+    <section class="px-6 md:px-16 lg:px-24 mt-14 max-w-[80rem] lg:mx-auto">
       <div v-for="jobData in Data" class="mb-12 lg:mb-6">
         <div 
           v-if="passFilter(jobData)"
@@ -97,7 +97,7 @@ const filterStyle = 'bg-cyan-400/10 px-3 py-1 rounded hover:bg-DesaturatedDarkCy
           :class="[jobData.featured == true ? 'border-l-4 border-DesaturatedDarkCyan' : 'border-l-4 border-white']"
         >
           <div class="lg:flex lg:items-center lg:gap-x-6">
-          <img :src=jobData.logo class="w-14 lg:w-[6rem] absolute lg:static top-[-1.7rem] left-5" alt="logo" />
+          <img :src=jobData.logo class="w-14 lg:w-[5rem] absolute lg:static top-[-1.7rem] left-5" alt="logo" />
           <div class="min-w-max">
             <div class="flex items-center">
               <p class="text-DesaturatedDarkCyan font-bold mr-4">{{ jobData.company }}</p>
